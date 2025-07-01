@@ -61,7 +61,7 @@ public static class ServiceExtensions
         services.AddTransient<IConfigureOptions<SwaggerGenOptions>, ConfigureSwaggerOptions>();
         services.AddSwaggerGen(options =>
         {
-            options.OperationFilter<SwaggerDefaultValues>();
+            // options.OperationFilter<SwaggerDefaultValues>();
 
             // Define o esquema de segurança
             options.AddSecurityDefinition("Bearer", new Microsoft.OpenApi.Models.OpenApiSecurityScheme
